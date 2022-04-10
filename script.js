@@ -7,6 +7,7 @@ let iconFormat = ".png";
 function setFunc(e) {
     if (e.keyCode == 13) {
         getData(searchValue.value);
+        searchValue.value = "";
     }
 }
 
@@ -41,9 +42,14 @@ function getData(value) {
             case "Snow":
                 document.body.style.backgroundImage = 'url(/photo/snow.gif)';
                 break;
+            case "Mist":
+                document.body.style.backgroundImage = 'url(/photo/fog.gif)';
+                break;
         
             default:
                 break;
+
+                
         }
         })
         
